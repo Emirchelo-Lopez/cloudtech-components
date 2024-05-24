@@ -1,0 +1,32 @@
+#breadcrumb {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 2px 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #272b30;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+#breadcrumb > :nth-child(11) {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */

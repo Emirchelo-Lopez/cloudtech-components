@@ -1,0 +1,15 @@
+@use "../sass/abstracts/variables";
+@use "../sass/components/breadcrumb";
+@use "../sass/components/counter";
+@use "../sass/components/role-pill-desktop";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  margin: variables.$spacing-none;
+  padding: 0;
+  height: 100vh;
+}

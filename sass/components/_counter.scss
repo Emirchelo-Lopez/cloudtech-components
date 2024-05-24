@@ -1,0 +1,48 @@
+@use "../sass/abstracts/variables";
+
+#counter {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: variables.$spacing-x-sm variables.$spacing-sm;
+  gap: variables.$spacing-x-sm;
+  border-radius: variables.$radius-x-sm;
+
+  /* Base 1 (Bold) */
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px; /* 160% */
+  letter-spacing: -0.15px;
+
+  // text-primary
+  color: #272b30;
+
+  // surface-primary
+  background-color: #f4f4f4;
+}
+
+.number {
+  flex: 1 0 0;
+  text-align: center;
+}
+
+.steppers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: #f4f4f4;
+  padding: variables.$spacing-none;
+}

@@ -1,0 +1,62 @@
+@use "../sass/abstracts/variables";
+
+#role-pill-desktop {
+  display: inline-flex;
+  padding: variables.$spacing-xx-sm variables.$spacing-md;
+  justify-content: center;
+  align-items: center;
+  gap: variables.$spacing-x-sm;
+  border-radius: variables.$radius-xxx-lg;
+
+  /* Base 1 (Semibold) */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 160% */
+  letter-spacing: -0.15px;
+}
+
+.component-set {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  width: auto;
+}
+
+.default {
+  color: #6f767e; // neutral-04
+  background-color: #ffffff; //neutral-00
+}
+
+.hover {
+  color: #1a1d1f; // neutral-07
+  background-color: #ffffff; //neutral-00
+}
+
+.hover-darkMode {
+  color: #fcfcfc; // neutral-01
+  background-color: #ffffff; //neutral-00
+}
+
+.active-darkMode {
+  background-color: #272b30; // neutral-06
+
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.49) inset,
+    0px 2px 1px 0px rgba(255, 255, 255, 0.06) inset,
+    0px 4px 8px -4px rgba(0, 0, 0, 0.25);
+
+  color: #fcfcfc; // neutral-01
+}
+
+.active {
+  background-color: #fcfcfc; // neutral-01
+
+  box-shadow: 0px -1px 1px 0px rgba(0, 0, 0, 0.04) inset,
+    0px 2px 0px 0px rgba(255, 255, 255, 0.25) inset,
+    0px 4px 8px -4px rgba(0, 0, 0, 0.25);
+
+  color: #1a1d1f; // neutral-07
+}

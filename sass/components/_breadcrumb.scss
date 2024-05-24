@@ -1,0 +1,29 @@
+@use "../abstracts/variables";
+
+#breadcrumb {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: variables.$spacing-x-sm;
+  flex-wrap: wrap;
+  padding: variables.$spacing-none;
+  text-align: center;
+
+  /* Caption 2 (Medium) */
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px; /* 100% */
+  letter-spacing: -0.12px;
+
+  // text-primary
+  color: #272b30;
+}
+
+p {
+  margin: variables.$spacing-none;
+}
+
+#breadcrumb > :nth-child(11) {
+  font-weight: 700;
+}
