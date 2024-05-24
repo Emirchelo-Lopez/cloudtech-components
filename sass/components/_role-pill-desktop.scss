@@ -1,6 +1,6 @@
 @use "../sass/abstracts/variables";
 
-#role-pill-desktop {
+.role-pill-desktop {
   display: inline-flex;
   padding: variables.$spacing-xx-sm variables.$spacing-md;
   justify-content: center;
