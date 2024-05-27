@@ -3,6 +3,13 @@
 @use "../sass/components/counter";
 @use "../sass/components/role-pill-desktop";
 @use "../sass/components/role-pill-mobile";
+@use "../sass/components/dropdown-menu";
+
+* {
+  margin: variables.$spacing-none;
+  padding: variables.$spacing-none;
+  box-sizing: border-box;
+}
 
 body {
   display: flex;
@@ -10,7 +17,5 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 32px;
-  margin: variables.$spacing-none;
-  padding: 0;
   height: 100vh;
 }
