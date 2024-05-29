@@ -1,0 +1,52 @@
+@use "../abstracts/variables";
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: variables.$spacing-sm;
+}
+
+.input-group textarea {
+  padding: variables.$spacing-sm;
+  border-radius: variables.$radius-sm;
+  border: none;
+  background-color: #f4f4f4; // $dividerBg
+  color: #9a9fa5; //$textCaption
+  caret-color: #2a85ff; //$primaryColor
+  width: 144px;
+  resize: none;
+
+  /* Base 1 (Semibold) */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 160% */
+  letter-spacing: -0.15px;
+}
+
+.input-group svg {
+  cursor: pointer;
+}
+
+.input-group.input-fixed {
+  padding: variables.$spacing-x-sm;
+  justify-content: flex-start;
+  width: 232px;
+
+  /* Body 1 (Medium) */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 160% */
+  letter-spacing: -0.225px;
+}
+
+.component-set-2x1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: variables.$spacing-xx-lg;
+}

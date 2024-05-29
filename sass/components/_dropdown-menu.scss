@@ -9,6 +9,14 @@
   line-height: 24px; /* 171.429% */
   letter-spacing: -0.14px;
 }
+
+.select-menu .select-menu-title {
+  display: flex;
+  align-items: center;
+  gap: variables.$spacing-xx-sm;
+  margin-bottom: variables.$spacing-sm;
+}
+
 .select-menu .select-btn {
   display: flex;
   padding: variables.$spacing-sm;
@@ -42,6 +50,11 @@
 
 .select-btn svg {
   transition: 0.3s;
+}
+
+.select-menu.active {
+  border-bottom-left-radius: variables.$radius-sm;
+  border-bottom-right-radius: variables.$radius-sm;
 }
 
 .select-menu.active .select-btn svg {
@@ -78,4 +91,9 @@
 
 .option .option-text {
   color: #6f767e; //$dropdownLabelIdle
+}
+
+body > div.select-menu.active > ul > li:nth-child(10) {
+  border-bottom-left-radius: variables.$radius-sm;
+  border-bottom-right-radius: variables.$radius-sm;
 }
