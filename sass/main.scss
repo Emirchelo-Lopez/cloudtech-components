@@ -1,10 +1,12 @@
-@use "../sass/abstracts/variables";
-@use "../sass/components/breadcrumb";
-@use "../sass/components/counter";
-@use "../sass/components/role-pill-desktop";
-@use "../sass/components/role-pill-mobile";
-@use "../sass/components/dropdown-menu";
-@use "../sass/components/draggableField";
+@use "./sass/abstracts/variables";
+@use "./sass/components/breadcrumb";
+@use "./sass/components/counter";
+@use "./sass/components/role-pill-desktop";
+@use "./sass/components/role-pill-mobile";
+@use "./sass/components/dropdown-menu";
+@use "./sass/components/draggableField";
+@use "./components/checkpoint";
+@use "./components/sections-completed";
 
 * {
   margin: variables.$spacing-none;
@@ -19,4 +21,18 @@ body {
   flex-direction: column;
   gap: 32px;
   height: 100vh;
+}
+
+.component-set-2x1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: variables.$spacing-xx-lg;
+}
+
+.component-set-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: variables.$spacing-xx-lg;
 }

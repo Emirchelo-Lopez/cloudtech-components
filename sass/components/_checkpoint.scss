@@ -1,0 +1,41 @@
+@use "../abstracts/variables";
+
+.checkpoint {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* Button 2 */
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 184.615% */
+  letter-spacing: -0.13px;
+}
+
+.checkpoint-index {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkpoint-index p {
+  position: absolute;
+}
+
+.checkpoint-fillOff {
+  color: #6f767e; //$progressbar-idle
+}
+
+.checkpoint-fillOn {
+  color: #1a1d1f; //$progressbar-label-primary-active
+}
+
+.checkpoint-fillOn-darkMode {
+  color: #fcfcfc; //$progressbar-label-primary-active
+}

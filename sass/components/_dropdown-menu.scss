@@ -93,7 +93,7 @@
   color: #6f767e; //$dropdownLabelIdle
 }
 
-body > div.select-menu.active > ul > li:nth-child(10) {
+ul > li:last-child {
   border-bottom-left-radius: variables.$radius-sm;
   border-bottom-right-radius: variables.$radius-sm;
 }
